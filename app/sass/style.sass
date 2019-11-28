@@ -1,0 +1,350 @@
+@import "vars"
+@import "fonts"
+@import "main"
+
+/* section-header */
+
+.section-header
+	position: relative
+	background: #000 url(../img/background-header.jpg)
+	min-height: 900px
+	background-size: cover
+	background-repeat: no-repeat
+	&:before
+		position: absolute
+		content: ''
+		background: $dark-blue
+		width: 100%
+		height: 100%
+		top: 0
+		opacity: .8
+
+.top_header
+	position: fixed
+	width: 100%
+	z-index: 1001
+	min-height: 100px
+	background: $dark-blue
+	padding: 35px 0
+
+.title_header
+	h1
+		color: $white
+		font-family: $RalewayRegular
+	
+.bottom_header
+	padding: 320px 0 289px 0
+
+.list-menu_header
+	text-align: right
+	margin: 0!important
+	li
+		display: inline-block
+		&:last-child
+			a
+				padding: 0 0 0 20px
+		&:hover
+			a
+				color: #cdcdcd
+				transition: .6s	 
+		a
+			text-decoration: none
+			font-family: $RalewayRegular
+			font-size: 20px
+			color: $white
+			padding: 38px 20px
+
+.submenu-button
+	display: none
+
+.hamburger-inner
+	background-color: $white
+	&:after
+		background-color: $white
+	&:before	
+		background-color: $white
+
+.hamburger.is-active 
+	.hamburger-inner
+		background-color: $white
+
+.hamburger.is-active 
+	.hamburger-inner
+		&:after
+			background-color: $white
+		&:before	
+			background-color: $white
+
+.hamburger
+	padding: 7px 15px		
+
+/* mmenu */
+
+.mm-navbar__title 
+	&:not([href]):not([tabindex])
+		color: #fff
+
+.mm-menu a, .mm-menu a:active, .mm-menu a:hover, .mm-menu a:link, .mm-menu a:visited
+	color: #fff
+	font-family: $RalewayRegular
+	font-size: 18px
+	padding: 15px 20px
+
+.mm-listitem
+	&:after
+		left: 0
+
+.title-mmenu
+	display: block
+	margin: -15px 0 0 0 
+	padding: 12px 0
+
+.navbar-menu_header
+	padding: 5px 0
+
+.item-welcome
+	h1
+		color: $white
+		font-size: 70px
+		font-family: $GothamProMedium
+		text-align: right
+
+.title-me
+	text-align: right		
+	p	
+		display: inline-block
+		color: $white
+		font-size: 16px
+		font-family: $GothamProMedium
+		text-align: center
+		max-width: 667px
+		line-height: 36px
+
+.social-links
+	text-align: center
+	margin: 15px 0 0 0
+
+.list_social-links
+	display: inline-block
+	margin: 0 0 0 40px
+	li
+		display: inline-block
+		margin: 0 25px
+		&:hover
+			transform: translateY(-10px);
+			transition: 1s
+		a
+			i
+				color: $white
+				font-size: 36px
+				text-decoration: none
+
+/* section-about */				
+
+.section-about
+	min-height: 950px	
+
+.photo
+	border: 15px solid $white
+	width: 445px
+	height: 340px
+	img
+		width: 415px
+		height: 310px
+
+.description_about
+	h2
+		text-transform: uppercase
+		font-size: 40px
+		color: $white
+		font-family: $GothamProNarrowMedium
+		letter-spacing: 1px
+		padding: 40px 0 65px 0
+	p
+		font-size: 18px
+		color: $white
+		font-family: $GothamProMedium
+		line-height: 40px
+
+.connection
+	padding: 70px 0 0 0
+	h3
+		font-size: 24px
+		color: $white
+		font-family: $GothamProNarrowMedium		
+		padding: 0 0 10px 0
+		border-bottom: 1px solid $white
+		margin: 0 0 35px 0
+		
+.block-links
+	display: flex
+	flex-direction: column
+	.row-links
+		display: flex
+		flex-direction: row		
+		.item-link
+			display: flex
+			flex-direction: row		
+
+.row-links
+	margin: 0 0 40px 0
+	justify-content: space-between
+
+.icon-link
+	margin: 0 20px 0 0
+	i
+		color: $white		
+		font-size: 30px	
+
+.description-link
+	padding: 5px 0 0 0
+	span
+		display: block	
+
+.title-social
+	font-family: $GothamProMedium
+	font-size: 18px
+	color: $white			
+
+.content-social
+	font-family: $GothamProMedium
+	font-size: 16px
+	color: $white	
+	a
+		color: $white
+
+/* section-services */	
+
+.section-services
+	min-height: 1170px
+
+.item-service
+	height: 360px
+	background: $dark-blue
+	padding: 40px 35px
+	opacity: .9
+	&:hover
+		background: $light-blue
+		transition: 1s
+
+.bottom-row
+	margin: 60px 0 0 0
+
+.icon-service
+	img
+		width: 70px
+
+.title-service
+	padding: 35px 0 0 0
+	h3
+		font-size: 18px
+		color: $white
+		font-family: $GothamProMedium	
+
+.description-service
+	padding: 20px 0 0 0
+	p
+		font-size: 16px
+		color: $white
+		font-family: $GothamProMedium	
+		line-height: 34px
+
+/* section-portfolio */
+
+.section-portfolio
+	min-height: 680px
+
+.header-portfolio
+	h2
+		padding: 0 0 40px 0	
+
+.item_portfolio
+	background: $white
+	padding: 10px
+	margin: 0 0 30px 0
+
+.content_portfolio
+	h2
+		font-family: $GothamProMedium
+		font-size: 20px
+		padding: 10px 0 
+
+.list-links_portfolio
+	margin: 0
+	li
+		list-style: none
+		display: inline-block
+		margin: 0 10px 0 0
+		a
+			display: block
+			text-decoration: none	
+			background: $light-blue
+			font-size: 16px
+			color: $white
+			font-family: $RalewayRegular
+			padding: 10px	
+			&:hover
+				transform: translateY(-5px)
+				transition: .7s
+		&:last-child
+			margin: 0
+
+/* section-contacts */
+
+.section-contacts
+	min-height: 1040px
+	
+.item-contact
+	width: 360px
+	height: 200px 
+	background: $dark-blue
+	padding: 60px 0
+	opacity: .9
+	span
+		display: block
+		color: $white
+		font-family: $GothamProNarrowMedium	
+		letter-spacing: 1px
+		&:first-child
+			font-size: 26px
+			text-decoration: underline
+		&:last-child
+			font-size: 18px
+			margin: 15px 0 0 0
+		a
+			color: $white		
+	&:hover
+		background: $light-blue
+		transition: 1s
+		
+
+.button-line
+	margin: 135px 0 0 0
+	a
+		display: inline-block
+		text-decoration: none
+		color: $white
+		background: $light-blue
+		font-family: $GothamProMedium
+		font-size: 16px
+		padding: 15px 45px
+		border-radius: 5px
+		&:hover
+			transform: translateY(-15px)
+			transition: 1s
+
+.footer-bottom
+	background: $dark-blue
+	opacity: .9
+	min-height: 70px
+
+.copyright
+	padding: 21px 0 
+	p
+		font-family: $GothamProMedium
+		color: $white
+		font-size: 18px
+		text-align: center
+		margin: 0!important
+
+@import "media" // Always at the end

@@ -1,0 +1,62 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	overflow-x: hidden
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	
+.text-center
+	text-align: center
+
+.fl-right
+	float: right
+
+.landing-page
+	padding: 100px 0 150px 0
+
+.header-landing
+	h2
+		font-family: $GothamProNarrowMedium		
+		font-size: 40px
+		text-transform: uppercase	
+		text-align: center
+		padding: 0 0 72px 0
+		letter-spacing: 1px
+
+.white
+	color: $white
+
+.blue
+	color: $light-blue	
+
+.section-blue
+	background: $dark-blue	
+	opacity: .9	
+
+ul, h1, h2, h3, h4, h5, h6
+	margin: 0
+	padding: 0
+
+h1, h2, h3, h4, h5, h6, p, a
+	font-weight: 100	
+
+b, strong
+	font-weight: bold
+
+@import "media" // Always at the end
